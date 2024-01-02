@@ -5,7 +5,7 @@ public Map<String,String> getContextUserInformation(){
         'EmailId'=>UserInfo.getUserEmail(),
         'ProfileId'=>UserInfo.getProfileId(),
         'Type'=>UserInfo.getUserType(),
-        'UserName'=>UserInfo.getUserName()
+        'UserName'=>UserInfo.getUserName(),
     })
    return m;
 }
