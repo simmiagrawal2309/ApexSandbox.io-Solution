@@ -1,0 +1,12 @@
+public List<Account> getAccounts(List<Account> accounts) {
+    // code here
+    //sort bu ar inn desc
+    //order by desc
+    List<Account> alist=new List<Account>();
+    for(Account a:accounts){
+        Account rec=[SELECT Name,AnnualRevenue FROM Account WHERE Id =:a.Id Order by AnnualRevenue DESC];
+       alist.add(rec);
+    }
+    return alist;
+}
+// write extra class here 
