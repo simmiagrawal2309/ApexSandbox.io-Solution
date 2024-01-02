@@ -1,0 +1,11 @@
+public Boolean duplicateContacts(Contact c1, Contact c2) {
+    //code here
+    //if phone num or email is same -duplicate
+    
+    if((c1.Phone == c2.Phone )|| (c1.Email==c2.Email)){
+    return true;
+    }
+    else{
+        return false;
+    }
+}
