@@ -1,0 +1,9 @@
+public List<sObject> getListOfsObject(List<Account> accounts, List<Contact> contacts)
+{
+    List<sObject> sobjectlist=new List<sObject>();
+  
+    sobjectlist.add(accounts);
+      sobjectlist.add(contacts);
+      return sobjectlist;
+    // code here
+}
