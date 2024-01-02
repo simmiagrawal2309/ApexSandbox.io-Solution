@@ -2,17 +2,16 @@ public List<sObject> getListOfsObject(List<Account> accounts, List<Contact> cont
     {
         List<sObject> sobjectlist=new List<sObject>();
         //check list is not empty
-        if(!accounts.isEmpty()){
-            for(Account a:accounts){
-                sobjectlist.add(a);
-            }
+         if (accounts != null) {
+        for (Account account : accounts) {
+            sobjectlist.add(account);
         }
-        if(!contacts.isEmpty()){
-            for(Contact c:contacts){
-                sobjectlist.add(c);
-            }
+    }
+    if (contacts != null) {
+        for (Contact contact : contacts) {
+            sobjectlist.add(contact);
         }
-        
+    }
         
         return sobjectlist;
         // code here
