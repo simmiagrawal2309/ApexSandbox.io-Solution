@@ -4,4 +4,8 @@ public List<Account> getAccountsFromJSONString(String inputJSON){
         Object acc= JSON.deserialize(inputJSON,List<Account>.class);
         System.debug(acc);
         return (List<Account>)acc; //cast
+
+        if(inputJSON==null){
+            return null;
+        }
 }
