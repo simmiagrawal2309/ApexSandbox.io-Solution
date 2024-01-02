@@ -2,7 +2,7 @@ public List<Account> getAccountsFromJSONString(String inputJSON){
    //Deserialize - converting JSON String into Object
         //JSON.deserialize returns an Object, but you need to return a List of Accounts.
         
-        if(inputJSON==''||inputJSON==null){
+        if(String.isBlank(inputJSON)){
             return null;
         }
         else{
